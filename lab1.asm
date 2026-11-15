@@ -4,5 +4,7 @@ greeting: .asciiz "Hello World!"
 
 .text
 main: addi $v0,$zero,4 #v0:=4
-la $a0,greeting #a0:=$greeting
-syscall
+	la $a0,greeting #a0:=$greeting
+	syscall
+	li $v0,10 #v0:=10
+	syscall
